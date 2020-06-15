@@ -12,10 +12,22 @@
     <h1>To-do List Generator</h1>
     <form id="toDoForm">
       <div class="form-group">
-        <label for="item">Enter Task to add to your To-Do List</label>
-        <input id="item" class="form-control" type="text">
+        <label for="item-name">Name of task</label>
+        <input id="item-name" class="form-control" type="text">
       </div>
+      <div class="form-group">
+        <label for="item-details">Details of Task</label>
+        <input id="item-details" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="item-time">Expected time to complete</label>
+        <input id="item-time" class="form-control" type="text">
+      </div>
+      <button type="submit" class="btn">Submit</button>
     </form>
+    <div id="to-do-list">
+      <h2>Your To-do List:</h2>
+    </div>
   </div>
 </body>
 </html>

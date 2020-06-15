@@ -42,8 +42,24 @@ ToDoList.prototype.deleteListItem = function(id) {
 
 // Business Logic for List Items
 
-function listItem (itemName, details, timeFrame) {
+function ListItem (itemName, details, timeFrame) {
   this.itemName = itemName;
   this.details = details;
-  this.timeFrame - timeFrame;
+  this.timeFrame = timeFrame;
 }
+
+// User Interface Logic
+let toDoList = new ToDoList();
+
+$(document).ready(function(){
+  $("form#toDoForm").submit(function(event) { 
+    event.preventDefault();
+    let inputtedItemName = $("input#item-name").val();
+    let inputtedDetails = $("input#item-details").val();
+    let inputtedTimeFrame = $("input#item-time").val();
+    let newListItem = new ListItem(inputtedItemName, inputtedDetails, inputtedTimeFrame);
+    toDoList.addListItem(newListItem);
+    console.log(toDoList.listItems)
+
+  });
+});
