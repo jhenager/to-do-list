@@ -13,11 +13,10 @@ _This project focuses on the use of BDD, utilizing HTML, CSS, and JS to create a
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 |
-| **Program Contains places with Appropriate Key-Value-Pairs**| Input: "" | Output: "" |
-| **Program Contains and Uses Constructor (Place) to house Values Inside Place Objects** | User input: "city, country, landmarks, season" | Output: [city, country, landmarks, season] |
-| **Program Contains and Uses Constructor (PlaceList) to house a List of Place Objects** | Input: "Place object" | Output: [Place] |
-| **Program and Site Display List of Cities**| Input: "" | Output: "Portland" |
-| **Program Displays PlaceList Object Array upon Click of the City Name**| Input: "Click: Portland" | Output: "Portland", "United States", ["St. John's Bridge", " Burnside Skatepark", " Multnomah Falls"], "Spring" |
+| **Program Accepts and Captures User Input in Form**| Input: "Mow the Lawn" | Output: "Mow the Lawn" |
+| **Program Takes Captured Input and puts it into List Item Object with Appropriate properties**| Input: "Yardwork, Mow the Lawn, 60 mins" | Output: "ListItem{Yardwork, Mow the Lawn, 60 mins"}|
+| **Program then Pushes List Item Object's Properties into listItems Array** | User input: "Yardwork, Mow the Lawn, 60 mins" | Output: "listItem [Yardwork, Mow the Lawn, 60 mins"] ||
+
 
 
 ## Setup/Installation Requirements
